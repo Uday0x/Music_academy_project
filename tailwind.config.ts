@@ -50,9 +50,15 @@ module.exports = {
           "0%": { opacity: "0", transform: "translate(-72%, -62%) scale(0.5)" },
           "100%": { opacity: "1", transform: "translate(-50%, -40%) scale(1)" },
         },
+          scroll: {
+      "0%": { transform: "translateX(0)" },
+      "100%": { transform: "translateX(-50%)" },
+    },
       },
       animation: {
         spotlight: "spotlight 2s ease 0.75s 1 forwards",
+          scroll: "scroll var(--animation-duration, 40s) linear infinite var(--animation-direction, forwards)",
+    
       },
     },
   },
